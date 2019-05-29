@@ -35,13 +35,13 @@ defmodule Phoenix.HTML.SimplifiedHelpers.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:timex, "~> 3.0"},
-      {:timex_ecto, "~> 3.0"},
-      {:ecto, "~> 2.0"},
-      {:gettext, "~> 0.10 or ~> 0.11"},
-      {:earmark, ">= 0.0.0", only: :dev},
-      {:ex_doc, "~> 0.10", only: :dev},
-      {:inch_ex, only: :docs},
+      {:timex, "~> 3.4 or ~> 3.3 or ~> 3.2"},
+      {:ecto, "~> 3.0 or ~> 2.2 or ~> 2.1"},
+      {:gettext, ">= 0.11.0"},
+      {:phoenix, "~> 1.3 or ~> 1.4", only: :test},
+      {:ex_doc, ">= 0.0.0", only: :dev},
+      {:inch_ex, ">= 0.0.0", only: :docs},
+      {:earmark, ">= 0.0.0", only: :dev}
     ]
   end
 
